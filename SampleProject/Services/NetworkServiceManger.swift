@@ -42,7 +42,6 @@ class NetworkService {
         
     }
     
-    /// Loads JSON either from a bundled file (jsonData.json) or from an asset catalog entry named "jsonData".
     private func loadJSONData() throws -> Data {
         if let url = Bundle.main.url(forResource: "jsonData", withExtension: "json") {
             return try Data(contentsOf: url)
